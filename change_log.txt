@@ -1,0 +1,28 @@
+
+Match Element Height Width
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+Version 0.4
+	- Shortcode changes (v0.3 or earlier shortcode will not work):
+		- Attribute 'target' now required for all instances
+		- Attribute 'match' defaults to 'height', or pass 'width', 'both'
+		- Attribute 'responsive' defaults to true, or pass false
+	- Fix: changed PHP class constructor function name
+	- Refactored javascript.
+
+-----------------------------------------------------------------------------------------
+Version 0.3
+	- Added support for responsive layouts, optional on a per use basis - (height only)
+
+-----------------------------------------------------------------------------------------
+Version 0.2
+	- Added minified js file
+
+-----------------------------------------------------------------------------------------
+Version 0.1
+	- Initial beta release

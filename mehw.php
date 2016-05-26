@@ -39,7 +39,7 @@ class ozMatchElementHeightWidth {
 		}
 
 		ob_start();
-		?><script>jQuery(document).ready(function($){var opts={<?php
+		?><script>jQuery(document).ready(function($){new ozMEHW({<?php
 
 
 			echo 't:"'.$target.'"';
@@ -47,14 +47,14 @@ class ozMatchElementHeightWidth {
 			echo $responsive        ? '' : ',r:"false"'      ;
 
 
-		?>},new ozMEHW(opts)})</script><?php
+		?>})})</script><?php
 
 		return ob_get_clean();
 	}
 
 	function enqueue_scripts() {
 
-		wp_register_script( 'mehw' , plugins_url('/js/mehw.min.js', __FILE__), array('jquery'), '1.0', true);
+		wp_register_script( 'mehw' , plugins_url('/js/mehw.min.js', __FILE__), array('jquery'), '1.0', true );
 		wp_enqueue_script( 'mehw' );
 	}
 
